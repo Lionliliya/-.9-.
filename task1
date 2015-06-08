@@ -1,0 +1,27 @@
+package home9lesson;
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String [] arr = {"first","second", "third", "fourth", "fifth", "sixth", "seventh"};
+		ShowMyList(arr);
+	}
+	public static <T> void ShowMyList(T[] arr) {
+		
+		ArrayList<T> list = new ArrayList<T>();
+		for (T temp : arr) {
+			list.add(temp);
+		}
+		System.out.println("You have new list - "+list);
+		
+		/**deleting of first two elements and one last. Printing the result**/
+		
+		
+		System.out.println(list.subList(2, list.size()-1));
+		
+		
+	}
+
+}
